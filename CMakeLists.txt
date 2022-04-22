@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.23)
 
-set(project_name example-postgresql) ## rename your project here
+set(project_name tradeplat4m-postgresql) ## rename your project here
 
 project(${project_name})
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 20)
 
 add_library(${project_name}-lib
         src/controller/UserController.hpp

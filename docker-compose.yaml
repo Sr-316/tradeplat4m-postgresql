@@ -1,11 +1,13 @@
 version: '3'
 
 services:
-  db:
-    image: postgres
+  timescale:
+    image: timescale/timescaledb:latest-pg14
     restart: always
     environment:
-      POSTGRES_PASSWORD: db-pass
+      POSTGRES_USER: tradeplat4m
+      POSTGRES_PASSWORD: Sd$$-3.16
+      POSTGRES_DB: tradeplat4m 
     ports:
       - 5432:5432
 
@@ -14,6 +16,6 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - db
+      - timescale
     environment:
       CONFIG_PROFILE: local-docker

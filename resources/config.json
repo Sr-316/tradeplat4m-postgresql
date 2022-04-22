@@ -3,12 +3,12 @@
     "host": "0.0.0.0",
     "port": 8000,
     "swaggerHost": "localhost:8000",
-    "dbConnectionString": "postgresql://postgres:db-pass@localhost:5432/postgres"
+    "dbConnectionString": "postgres://tradeplat4m:Sd$$-3.16@localhost:5432/tradeplat4m"
   },
   "local-docker": {
     "host": "0.0.0.0",
     "port": 8000,
     "swaggerHost": "localhost:8000",
-    "dbConnectionString": "postgresql://postgres:db-pass@db:5432/postgres"
+    "dbConnectionString": "postgres://tradeplat4m:Sd$$-3.16@timescale:5432/tradeplat4m"
   }
 }
